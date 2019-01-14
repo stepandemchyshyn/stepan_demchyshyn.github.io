@@ -1,24 +1,93 @@
 <!DOCTYPE html>
 <html>
-<body>
+<head>
 <style>
 p	{font-family:courier;
-	color:rgb(51,51,51)	
+	color:rgb(51,51,51);
+	max-width: 1000px;
+	text-align:justify
 	}
-h1	{color:rgb(51,51,51)}
-mark	{background:rgb(255,238,170)}
+h1	{color:rgb(51,51,51);
+	text-align:center;
+	font-family: Arial, Helvetica, sans-serif;}
+mark	{background:rgb(255,246,213)}
+
+nav {
+	font-family:courier;
+	float: left;
+	width: 25%;
+	<!--background-color: #f1f1f1;-->
+	text-align:left;
+	padding: 10px;
+}
+a:link{background:rgb(85,221,255)}
+a:visited{background:rgb(244,215,238)}
+a:hover{background:rgb(255,238,170)}
+
+/* Style the list inside the menu */
+nav ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+article {
+  float: left;
+  padding: 20px;
+  width: 50%;
+  background-color: #f1f1f1;
+  height: 300px; /* only for demonstration, should be removed */
+}
+
+/* Clear floats after the columns */
+section:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Style the footer */
+footer {
+  background-color: #777;
+  padding: 10px;
+  text-align: center;
+  color: white;
+}
+
+<!--/* Responsive layout - makes the two columns/boxes stack on top of each other instead of next to each other, on small screens */
+@media (max-width: 600px) {
+  nav, article {
+    width: 100%;
+    height: auto;
+  }
+}-->
+
 </style>
+</head>
+
+<body>
+<h1>Stepan DEMCHYSHYN </h1>
+<!--<hr>-->
+<section>
+  <nav>
+    <ul>
+      <li><a href="index.html">About</a></li>
+      <li><a href="publications.html">Publications</a></li>
+      <li><a href="#">Blog</a></li>
+	  <li><a href="#">Contact</a></li>
+    </ul>
+  </nav>
+
+  <article>
+	<p> My name is Stepan Demchyshyn and I am a <mark>PhD student</mark> researching light emitting flexible and stretchable materials in 
+		<a href="https://www.jku.at/en/institute-of-experimental-physics/soft-matter-physics/about-us/">Soft Matter Physics
+		Department (SOMAP)</a> at Johannes Kepler University in Linz, Austria. I focus on combining my previous experience with <mark>metal halide perovskite</mark> crystals
+		with highly <mark>deformable materials</mark> to create next generation light emitting materials. </p>
+<hr>
+		<p>If you are interested, you can download my CV here or contact me at <a href="mailto:stepan.demchyshyn@jku.at" target="_top">stepan.demchyshyn@jku.at</a> or follow/DM me on <a href = "https://twitter.com/Stepan_Demch">Twitter</a>.</p>
+<hr>
+	
+<img src="picture.svg" alt="picture">
 
 
-<h1 style="text-align:center;">Stepan DEMCHYSHYN </h1>
-<hr>
-<p> My name is Stepan Demchyshyn and I am a <mark>PhD student</mark> researching light emitting flexible and stretchable materials in 
-<a href="https://www.jku.at/en/institute-of-experimental-physics/soft-matter-physics/about-us/">Soft Matter Physics
- Department (SOMAP)</a> at Johannes Kepler University in Linz, Austria. I focus on combining my previous experience with <mark>metal halide perovskite</mark> crystals
- with highly <mark>deformable materials</mark> to create next generation light emitting materials. </p>
-<hr>
-<p>You can find a list of my publications <a href="publications.html">over here</a> and if you have any additional questions please contact me <a href="mailto:stepan.demchyshyn@jku.at" target="_top">
-stepan.demchyshyn@jku.at</a> </p>
-<hr>
 </body>
 </html>
